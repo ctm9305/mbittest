@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 성격유형 검사</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">MBTI 성격유형 검사</h1>
+        <form id="mbti-form" method="POST" class="mt-4">
+            <!-- 질문 1 -->
+            <div class="mb-4">
+                <p>나는 다른 사람들과 함께 있는 시간이 나를 활기차게 만든다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EI1" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EI1" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EI1" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EI1" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EI1" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 2 -->
+            <div class="mb-4">
+                <p>나는 계획을 세우고 그 계획을 따르는 것이 중요하다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP1" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP1" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP1" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP1" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP1" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 3 -->
+            <div class="mb-4">
+                <p>나는 사람들의 감정을 이해하고 공감하는 것을 중요하게 생각한다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF1" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF1" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF1" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF1" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF1" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 4 -->
+            <div class="mb-4">
+                <p>나는 구체적인 정보보다 큰 그림을 보는 것이 더 좋다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN1" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN1" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN1" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN1" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN1" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 5 -->
+            <div class="mb-4">
+                <p>나는 새로운 경험을 시도하는 것보다 익숙한 것을 반복하는 것이 더 편하다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN2" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN2" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN2" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN2" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="SN2" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 6 -->
+            <div class="mb-4">
+                <p>나는 빠른 결정을 내리고 즉시 행동하는 것을 선호한다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP2" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP2" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP2" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP2" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="JP2" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 7 -->
+            <div class="mb-4">
+                <p>나는 문제를 해결할 때 논리적인 접근을 선호한다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF2" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF2" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF2" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF2" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF2" value="5"> 5
+                </div>
+            </div>
+
+            <!-- 질문 8 -->
+            <div class="mb-4">
+                <p>나는 사람들이 어떻게 느끼는지에 대해 더 많이 고려한다.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF3" value="1" required> 1
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF3" value="2"> 2
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF3" value="3"> 3
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF3" value="4"> 4
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="TF3" value="5"> 5
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">결과 확인</button>
+            </div>
+        </form>
+
+        <!-- 결과 섹션 (초기에는 숨겨짐) -->
+        <div id="result" class="mt-5" style="display: none;">
+            <h2 class="text-center">당신의 MBTI 결과는?</h2>
+            <div id="result-type" class="text-center display-4"></div>
+            <div class="text-center mt-4">
+                <button id="retry-btn" class="btn btn-secondary">다시 검사하기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
